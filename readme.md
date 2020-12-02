@@ -4,10 +4,20 @@ This repo contains ROS nodes created for assignments from the Udacity's Robotics
 2. **Go Chase It**: design and build a mobile robot that can detect and chase a white-color ball
 3. **Where Am I**: use Adaptive Monte Carlo Localization (AMCL) to localize a mobile robot
 
+<p align="center">
+  <img height="200" src="/images/my_robot_2.png">
+  <img height="200" src="/images/my_robot_1.png">
+</p>
+
 ### Go Chase It
   - Design and build a mobile robot with camera & laser sensor
   - Place the robot in a custom-built Gazebo world
   - The robot is capable of chasing a ball that is within its field of vision
+
+<p align="center">
+  <img height="200" src="/images/ball_chaser.png">
+  <img height="200" src="/images/map.png">
+</p>
 
 **Build & Run Instructions:**
 - git clone this repo
@@ -19,6 +29,11 @@ This repo contains ROS nodes created for assignments from the Udacity's Robotics
 - Generate pgm map file from an existing Gazebo world using **pgm_map_creator** package
 - Use Adaptive Monte Carlo Localization **amcl navigation** ROS package to localize the robot
 - Fine tune amcl node to improve the accuracy of particle filter state estimation
+
+<p align="center">
+  <img height="200" src="/images/rviz_screenshot_1.png">
+  <img height="200" src="/images/rviz_screenshot_2.png">
+</p>
 
 **Build & Run Instruction:**
 - git clone this repo
