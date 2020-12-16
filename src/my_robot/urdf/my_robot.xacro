@@ -173,7 +173,7 @@
           izz="1e-6"
       />
     </inertial>
-
+ 
     <visual name='camera_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
@@ -187,6 +187,15 @@
         <box size=".05 .05 .05"/>
       </geometry>
     </collision>
+  </link>
+  
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+  <link name="camera_link_optical">
   </link>
 
   <!-- Lidar Link -->
